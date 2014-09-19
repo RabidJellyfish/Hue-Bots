@@ -87,6 +87,8 @@ namespace Hue_Bots
 		public override void Draw(SpriteBatch sb)
 		{
 			sb.Draw(MainGame.tex_bot, Position, MainGame.COLORS[Color]);
+			if (selected)
+				sb.Draw(MainGame.tex_selected, Position, Microsoft.Xna.Framework.Color.White);
 		}
 	}
 }

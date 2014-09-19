@@ -21,15 +21,19 @@ namespace Hue_Bots
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public static Texture2D tex_blank, tex_bot, tex_wall;
+		public static Texture2D tex_blank, tex_bot, tex_wall, tex_selected;
 
 		public static List<Actor> actors;
 		public static List<Static> statics;
+		public static List<Actor> removeActors;
+		public static List<Static> removeStatics;
 
 		public MainGame()
 		{
 			actors = new List<Actor>();
 			statics = new List<Static>();
+			removeActors = new List<Actor>();
+			removeStatics = new List<Static>();
 
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 720;
@@ -53,6 +57,7 @@ namespace Hue_Bots
 			tex_blank = Content.Load<Texture2D>("blank");
 			tex_bot = Content.Load<Texture2D>("bot");
 			tex_wall = Content.Load<Texture2D>("wall");
+			tex_selected = Content.Load<Texture2D>("selected");
 
 			actors.Add(new Bot(64, 0, 1));
 			statics.Add(new Wall(320, 0, 4));
@@ -75,6 +80,12 @@ namespace Hue_Bots
 			foreach (Actor a in actors)
 				a.Update();
 
+			foreach (Actor a in removeActors)
+				actors.Remove(a);
+			removeActors.Clear();
+			foreach (Static s in removeStatics)
+				statics.Remove(s);
+			removeStatics.Clear();
 			base.Update(gameTime);
 		}
 

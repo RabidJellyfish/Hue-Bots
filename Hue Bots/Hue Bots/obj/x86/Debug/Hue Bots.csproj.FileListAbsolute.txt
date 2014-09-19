@@ -7,3 +7,13 @@ c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue
 c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.pdb
 c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bot.xnb
 c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\wall.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\blank.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bot.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\wall.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Hue Bots.exe
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Hue Bots.pdb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.csprojResolveAssemblyReference.cache
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.exe
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.pdb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\selected.xnb
