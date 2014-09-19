@@ -67,7 +67,7 @@ namespace Hue_Bots
 
 			Position += Velocity;
 
-			foreach (Static s in MainGame.statics)
+			foreach (Actor s in MainGame.actors)
 			{
 				if (this.Box.Intersects(s.Box) && ColorMatches(s.Color))
 				{

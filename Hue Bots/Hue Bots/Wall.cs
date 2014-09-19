@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Hue_Bots
 {
-	class Wall : Static
+	class Wall : Actor
 	{
 		public Wall(int x, int y, int color) : base()
 		{
