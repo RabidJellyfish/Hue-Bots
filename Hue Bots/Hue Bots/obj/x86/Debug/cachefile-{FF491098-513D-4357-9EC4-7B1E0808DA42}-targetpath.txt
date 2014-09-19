@@ -1,0 +1,3 @@
+Content\blank.xnb
+Content\bot.xnb
+Content\wall.xnb

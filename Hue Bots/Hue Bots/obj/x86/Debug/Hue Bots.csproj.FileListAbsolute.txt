@@ -1,0 +1,9 @@
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\blank.xnb
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\bin\x86\Debug\Hue Bots.exe
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\bin\x86\Debug\Hue Bots.pdb
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.csprojResolveAssemblyReference.cache
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.exe
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.pdb
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bot.xnb
+c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\wall.xnb
