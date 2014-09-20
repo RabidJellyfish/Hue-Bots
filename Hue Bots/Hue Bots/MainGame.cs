@@ -21,15 +21,19 @@ namespace Hue_Bots
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public static Texture2D tex_blank, tex_bot, tex_wall, tex_selected, tex_door;
+		public static Texture2D tex_blank, tex_bot, tex_wall, tex_selected, tex_door, tex_spawner;
+		public static SpriteFont fnt_font;
 
 		public static List<Actor> actors;
 		public static List<Actor> removeActors;
+
+		private List<BotChoice> choices;
 
 		public MainGame()
 		{
 			actors = new List<Actor>();
 			removeActors = new List<Actor>();
+			choices = new List<BotChoice>();
 
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 896;
@@ -55,6 +59,8 @@ namespace Hue_Bots
 			tex_wall = Content.Load<Texture2D>("wall");
 			tex_selected = Content.Load<Texture2D>("selected");
             tex_door = Content.Load<Texture2D>("door");
+			tex_spawner = Content.Load<Texture2D>("spawner");
+			fnt_font = Content.Load<SpriteFont>("font");
 
 			actors.Add(new Bot(64, 64, 1));
 			for (int i = 0; i < 1088; i += 64)
@@ -68,6 +74,16 @@ namespace Hue_Bots
 				actors.Add(new Wall(graphics.PreferredBackBufferWidth - 384, i, 0));
 			}
 			actors.Add(new Door(320, 64, 4));
+
+			actors.Add(new Spawner(640, 640));
+
+			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 96, 4, 4));
+			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 196, 6, 4));
+			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 296, 2, 4));
+			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 396, 3, 4));
+			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 496, 1, 4));
+			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 596, 5, 4));
+			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 696, 7, 4));
 		}
 
 		protected override void UnloadContent()
@@ -81,9 +97,15 @@ namespace Hue_Bots
 			if (Keyboard.GetState().IsKeyDown(Keys.Escape))
 				this.Exit();
 
+			BotChoice.FoundSpawner = false;
+			foreach (Actor a in choices)
+				a.Update();
+			if (Mouse.GetState().LeftButton == ButtonState.Released && !BotChoice.FoundSpawner)
+				BotChoice.Selection = -1;
+
 			foreach (Actor a in actors)
 				a.Update();
-
+		
 			foreach (Actor a in removeActors)
 				actors.Remove(a);
 			removeActors.Clear();
@@ -96,9 +118,13 @@ namespace Hue_Bots
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
 			spriteBatch.Begin();
-			spriteBatch.Draw(tex_blank, new Rectangle(1088, 0, 320, 896), Color.LightGray);
 			foreach (Actor a in actors)
 				a.Draw(spriteBatch);
+			spriteBatch.Draw(tex_blank, new Rectangle(1088, 0, 320, 896), Color.LightGray);
+			foreach (Actor a in choices)
+				a.Draw(spriteBatch);
+			if (BotChoice.Selection != -1)
+				spriteBatch.Draw(tex_bot, new Vector2(Mouse.GetState().X - 32, Mouse.GetState().Y - 32), COLORS[BotChoice.Selection]);
 			spriteBatch.End();
 
 			base.Draw(gameTime);
