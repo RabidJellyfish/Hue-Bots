@@ -1,2 +1,3 @@
 c:\users\tad\desktop\documents\visual studio 2010\Projects\Hue Bots\Hue Bots\Hue BotsContent\obj\x86\Debug\Hue BotsContent.contentprojResolveAssemblyReference.cache
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue BotsContent\obj\x86\Debug\Hue BotsContent.contentprojResolveAssemblyReference.cache
+C:\Users\ssiegel2\Documents\Hue-Bots\Hue Bots\Hue BotsContent\obj\x86\Debug\Hue BotsContent.contentprojResolveAssemblyReference.cache

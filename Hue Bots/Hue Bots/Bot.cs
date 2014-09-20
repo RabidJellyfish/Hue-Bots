@@ -77,6 +77,11 @@ namespace Hue_Bots
 						Snap();
 						canMove = true;
 					}
+                    if (s is Door)
+                    {
+                        MainGame.removeActors.Add(s);
+                        MainGame.removeActors.Add(this);
+                    }
 				}
 			}
 
