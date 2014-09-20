@@ -1,0 +1,19 @@
+colors - roygbpwa
+	 46231570
+
+wall = w
+spawner = s
+space = .
+door = d
+color changer = c
+mixer = m
+finish = f
+
+redbot = 
+orangebot =
+...
+redwall = 
+orangewall = 
+...
+
+17x14

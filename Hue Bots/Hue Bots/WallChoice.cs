@@ -49,7 +49,7 @@ namespace Hue_Bots
 				{
 					if (this.count > 0)
 					{
-						MainGame.actors.Add(new Wall(curMouse.X, curMouse.Y, Selection));
+						MainGame.actors.Add(new Wall(curMouse.X - 32, curMouse.Y - 32, Selection));
 						MainGame.actors.Last().Snap();
 						count--;
 					}

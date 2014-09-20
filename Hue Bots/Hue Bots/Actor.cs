@@ -69,7 +69,7 @@ namespace Hue_Bots
 
 		public bool ColorMatches(int otherColor)
 		{
-			return this.Color == 0 || otherColor == 0 || this.Color == 7 || otherColor == 7 || this.Color == otherColor;
+			return otherColor == 0 || this.Color == otherColor;
 		}
 
 		public virtual void Update() { }

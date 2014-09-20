@@ -1,0 +1,29 @@
+.0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0
+.0 .0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 .0 .0
+.0 .0 w0 c4 .0 .0 .0 w0 f0 w0 .0 .0 .0 c1 w0 .0 .0
+.0 .0 w0 .0 .0 .0 .0 w0 .0 w0 .0 .0 .0 .0 w0 .0 .0
+.0 .0 w0 w0 w0 .0 .0 w1 .0 w4 .0 .0 w0 w0 w0 .0 .0
+.0 .0 w0 w0 w0 .0 .0 w0 d1 w0 .0 .0 w0 w0 w0 .0 .0
+.0 .0 w0 .0 w0 .0 .0 w0 d4 w0 .0 .0 w0 .0 w0 .0 .0
+.0 .0 w0 .0 .0 .0 .0 w0 .0 w0 .0 .0 .0 .0 w0 .0 .0
+.0 .0 w0 .0 .0 .0 .0 w0 c2 w0 .0 .0 .0 .0 w0 .0 .0
+.0 .0 w0 .0 .0 .0 .0 w0 .0 w0 .0 .0 .0 .0 w0 .0 .0
+.0 .0 w0 .0 w0 w0 .0 w0 .0 w0 .0 w0 w0 .0 w0 .0 .0
+.0 .0 w0 .0 c2 .0 .0 w7 s0 w7 .0 .0 c2 .0 w0 .0 .0
+.0 .0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 .0 .0
+.0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0
+
+redbots=1
+orangebots=0
+yellowbots=0
+greenbots=0
+bluebots=1
+purplebots=0
+whitebots=1
+redwalls=2
+orangewalls=0
+yellowwalls=1
+greenwalls=0
+bluewalls=1
+purplewalls=0
+graywalls=0
