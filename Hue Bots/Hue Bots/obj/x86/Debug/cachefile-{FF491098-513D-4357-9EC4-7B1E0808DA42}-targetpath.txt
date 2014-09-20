@@ -2,3 +2,4 @@ Content\blank.xnb
 Content\bot.xnb
 Content\wall.xnb
 Content\selected.xnb
+Content\door.xnb

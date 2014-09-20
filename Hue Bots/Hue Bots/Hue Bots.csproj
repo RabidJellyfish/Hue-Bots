@@ -110,6 +110,7 @@
     <Compile Include="Actor.cs" />
     <Compile Include="Bot.cs" />
     <Compile Include="BotChoice.cs" />
+    <Compile Include="Door.cs" />
     <Compile Include="Spawner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />

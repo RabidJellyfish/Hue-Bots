@@ -21,7 +21,7 @@ namespace Hue_Bots
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public static Texture2D tex_blank, tex_bot, tex_wall, tex_selected;
+		public static Texture2D tex_blank, tex_bot, tex_wall, tex_selected, tex_door;
 
 		public static List<Actor> actors;
 		public static List<Actor> removeActors;
@@ -54,6 +54,7 @@ namespace Hue_Bots
 			tex_bot = Content.Load<Texture2D>("bot");
 			tex_wall = Content.Load<Texture2D>("wall");
 			tex_selected = Content.Load<Texture2D>("selected");
+            tex_door = Content.Load<Texture2D>("door");
 
 			actors.Add(new Bot(64, 64, 1));
 			for (int i = 0; i < 1088; i += 64)
@@ -66,6 +67,7 @@ namespace Hue_Bots
 				actors.Add(new Wall(0, i, 0));
 				actors.Add(new Wall(graphics.PreferredBackBufferWidth - 384, i, 0));
 			}
+			actors.Add(new Door(320, 64, 4));
 		}
 
 		protected override void UnloadContent()
