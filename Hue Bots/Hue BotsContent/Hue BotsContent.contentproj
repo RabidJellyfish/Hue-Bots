@@ -141,9 +141,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 9.txt">
+    <None Include="levels\level 7.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>level 9</Name>
+      <Name>level 7</Name>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -172,9 +172,39 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 8.txt">
+    <None Include="levels\level 6.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>level 8</Name>
+      <Name>level 6</Name>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="levels\level 1.txt">
+      <Name>level 1</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="levels\level 2.txt">
+      <Name>level 2</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="levels\level 3.txt">
+      <Name>level 3</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="levels\level 5.txt">
+      <Name>level 5</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="levels\level 4.txt">
+      <Name>level 4</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

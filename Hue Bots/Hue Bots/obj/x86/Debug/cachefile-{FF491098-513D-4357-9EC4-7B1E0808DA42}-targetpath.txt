@@ -17,6 +17,11 @@ Content\changer.xnb
 Content\finish.xnb
 Content\arrow.xnb
 Content\levels\blank level.txt
-Content\levels\level 9.txt
+Content\levels\level 7.txt
 Content\levels\test level.txt
-Content\levels\level 8.txt
+Content\levels\level 6.txt
+Content\levels\level 1.txt
+Content\levels\level 2.txt
+Content\levels\level 3.txt
+Content\levels\level 5.txt
+Content\levels\level 4.txt

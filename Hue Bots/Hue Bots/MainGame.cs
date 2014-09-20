@@ -93,7 +93,7 @@ namespace Hue_Bots
 
 			fnt_font = Content.Load<SpriteFont>("font");
 
-			currentLevel = "level 8";
+			currentLevel = "level 1";
 			LoadLevel(currentLevel);
 
 			//// Testing ////
@@ -237,17 +237,6 @@ namespace Hue_Bots
 			if (Keyboard.GetState().IsKeyDown(Keys.Escape))
 				this.Exit();
 
-			if (Keyboard.GetState().IsKeyDown(Keys.R))
-			{
-				if (!rPressed)
-				{
-					rPressed = true;
-					LoadLevel(currentLevel);
-				}
-			}
-			else
-				rPressed = false;
-
 			if (EDIT_MODE)
 			{
 				#region Edit mode
@@ -359,6 +348,19 @@ namespace Hue_Bots
 				}
 
 				#endregion
+			}
+			else
+			{
+				if (Keyboard.GetState().IsKeyDown(Keys.R))
+				{
+					if (!rPressed)
+					{
+						rPressed = true;
+						LoadLevel(currentLevel);
+					}
+				}
+				else
+					rPressed = false;
 			}
 
 			BotChoice.FoundSpawner = false;
