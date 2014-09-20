@@ -17,11 +17,12 @@ namespace Hue_Bots
 	public class MainGame : Microsoft.Xna.Framework.Game
 	{
 		public static Color[] COLORS = new Color[] { Color.DarkGray, Color.Blue, Color.Yellow, Color.Lime, Color.Red, Color.Purple, Color.Orange, Color.White };
+		public static Texture2D[] tex_bots = new Texture2D[8];
 
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public static Texture2D tex_blank, tex_bot, tex_wall, tex_selected, tex_door, tex_spawner;
+		public static Texture2D tex_blank, tex_wall, tex_selected, tex_door, tex_spawner;
 		public static SpriteFont fnt_font;
 
 		public static List<Actor> actors;
@@ -57,14 +58,23 @@ namespace Hue_Bots
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			tex_blank = Content.Load<Texture2D>("blank");
-			tex_bot = Content.Load<Texture2D>("bot");
+
 			tex_wall = Content.Load<Texture2D>("wall");
 			tex_selected = Content.Load<Texture2D>("selected");
             tex_door = Content.Load<Texture2D>("door");
 			tex_spawner = Content.Load<Texture2D>("spawner");
+
+			tex_bots[0] = Content.Load<Texture2D>("bots/black bot");
+			tex_bots[1] = Content.Load<Texture2D>("bots/blue bot");
+			tex_bots[2] = Content.Load<Texture2D>("bots/yellow bot");
+			tex_bots[3] = Content.Load<Texture2D>("bots/green bot");
+			tex_bots[4] = Content.Load<Texture2D>("bots/red bot");
+			tex_bots[5] = Content.Load<Texture2D>("bots/purple bot");
+			tex_bots[6] = Content.Load<Texture2D>("bots/orange bot");
+			tex_bots[7] = Content.Load<Texture2D>("bots/white bot");
+
 			fnt_font = Content.Load<SpriteFont>("font");
 
-			actors.Add(new Bot(64, 64, 1, false));
 			for (int i = 0; i < 1088; i += 64)
 			{
 				actors.Add(new Wall(i, 0, 0));
@@ -138,7 +148,7 @@ namespace Hue_Bots
 			foreach (Actor a in wallChoices)
 				a.Draw(spriteBatch);
 			if (BotChoice.Selection != -1)
-				spriteBatch.Draw(tex_bot, new Vector2(Mouse.GetState().X - 32, Mouse.GetState().Y - 32), COLORS[BotChoice.Selection]);
+				spriteBatch.Draw(tex_bots[BotChoice.Selection], new Vector2(Mouse.GetState().X - 32, Mouse.GetState().Y - 32), Color.White);
 			if (WallChoice.Selection != -1)
 				spriteBatch.Draw(tex_wall, new Vector2((float)Math.Round((float)(Mouse.GetState().X - 32) / 64) * 64, (float)Math.Round((float)(Mouse.GetState().Y - 32) / 64) * 64), COLORS[WallChoice.Selection]);
 			spriteBatch.End();

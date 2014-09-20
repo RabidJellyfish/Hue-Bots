@@ -5,3 +5,11 @@ Content\selected.xnb
 Content\door.xnb
 Content\font.xnb
 Content\spawner.xnb
+Content\bots\black bot.xnb
+Content\bots\blue bot.xnb
+Content\bots\green bot.xnb
+Content\bots\orange bot.xnb
+Content\bots\purple bot.xnb
+Content\bots\red bot.xnb
+Content\bots\white bot.xnb
+Content\bots\yellow bot.xnb

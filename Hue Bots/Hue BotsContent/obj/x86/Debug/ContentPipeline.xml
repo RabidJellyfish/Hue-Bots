@@ -64,6 +64,78 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\spawner.xnb</Output>
       <Time>2014-09-19T20:54:00.5653846-04:00</Time>
     </Item>
+    <Item>
+      <Source>bots\black bot.png</Source>
+      <Name>bots\black bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\black bot.xnb</Output>
+      <Time>2014-09-19T22:25:24-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bots\blue bot.png</Source>
+      <Name>bots\blue bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\blue bot.xnb</Output>
+      <Time>2014-09-19T22:05:28-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bots\green bot.png</Source>
+      <Name>bots\green bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\green bot.xnb</Output>
+      <Time>2014-09-19T22:04:06-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bots\orange bot.png</Source>
+      <Name>bots\orange bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\orange bot.xnb</Output>
+      <Time>2014-09-19T22:04:56-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bots\purple bot.png</Source>
+      <Name>bots\purple bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\purple bot.xnb</Output>
+      <Time>2014-09-19T22:05:56-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bots\red bot.png</Source>
+      <Name>bots\red bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\red bot.xnb</Output>
+      <Time>2014-09-19T22:03:04-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bots\white bot.png</Source>
+      <Name>bots\white bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\white bot.xnb</Output>
+      <Time>2014-09-19T22:10:16-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bots\yellow bot.png</Source>
+      <Name>bots\yellow bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\yellow bot.xnb</Output>
+      <Time>2014-09-19T22:46:48.9106786-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
