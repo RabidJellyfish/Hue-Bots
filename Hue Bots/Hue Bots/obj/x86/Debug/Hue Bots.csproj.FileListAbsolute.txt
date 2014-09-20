@@ -29,3 +29,5 @@ C:\Users\ssiegel2\Documents\Hue-Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.ex
 C:\Users\ssiegel2\Documents\Hue-Bots\Hue Bots\Hue Bots\obj\x86\Debug\Hue Bots.pdb
 C:\Users\ssiegel2\Documents\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\door.xnb
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\door.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\font.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\spawner.xnb

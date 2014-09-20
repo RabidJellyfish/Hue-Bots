@@ -13,12 +13,12 @@ namespace Hue_Bots
 	{
 		private bool selected, canMove;
 
-		public Bot(int x, int y, int color) : base()
+		public Bot(int x, int y, int color, bool selected) : base()
 		{
 			this.X = x;
 			this.Y = y;
 			this.Color = color;
-			selected = false;
+			this.selected = selected;
 			canMove = true;
 		}
 
@@ -67,24 +67,39 @@ namespace Hue_Bots
 
 			foreach (Actor s in MainGame.actors)
 			{
-				if (this.Box.Intersects(s.Box) && ColorMatches(s.Color))
+				if (this.Box.Intersects(s.Box))
 				{
-					if (s is Wall)
+					if ((s is Wall) && ColorMatches(s.Color) || (s is Door))
 					{
-						Velocity = Vector2.Zero;
-						Snap();
-						canMove = true;
+						Stop();
+						if (s is Door && ColorMatches(s.Color))
+						{
+							MainGame.removeActors.Add(s);
+							MainGame.removeActors.Add(this);
+						}
 					}
-                    if (s is Door)
-                    {
-                        MainGame.removeActors.Add(s);
-                        MainGame.removeActors.Add(this);
-                    }
+					else if (s is Bot)
+					{
+						if (((Bot)s).Velocity.Length() > 0)
+						{
+							((Bot)s).Velocity *= -1;
+							this.Velocity *= -1;
+						}
+						else
+							Stop();
+					}
 				}
 			}
 
 			prevMouse = Mouse.GetState();
 			prevKey = Keyboard.GetState();
+		}
+
+		private void Stop()
+		{
+			Velocity = Vector2.Zero;
+			Snap();
+			canMove = true;
 		}
 
 		public override void Draw(SpriteBatch sb)

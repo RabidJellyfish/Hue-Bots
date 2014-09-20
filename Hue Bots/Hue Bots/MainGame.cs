@@ -27,13 +27,15 @@ namespace Hue_Bots
 		public static List<Actor> actors;
 		public static List<Actor> removeActors;
 
-		private List<BotChoice> choices;
+		private List<BotChoice> botChoices;
+		private List<WallChoice> wallChoices;
 
 		public MainGame()
 		{
 			actors = new List<Actor>();
 			removeActors = new List<Actor>();
-			choices = new List<BotChoice>();
+			botChoices = new List<BotChoice>();
+			wallChoices = new List<WallChoice>();
 
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 896;
@@ -62,7 +64,7 @@ namespace Hue_Bots
 			tex_spawner = Content.Load<Texture2D>("spawner");
 			fnt_font = Content.Load<SpriteFont>("font");
 
-			actors.Add(new Bot(64, 64, 1));
+			actors.Add(new Bot(64, 64, 1, false));
 			for (int i = 0; i < 1088; i += 64)
 			{
 				actors.Add(new Wall(i, 0, 0));
@@ -77,13 +79,21 @@ namespace Hue_Bots
 
 			actors.Add(new Spawner(640, 640));
 
-			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 96, 4, 4));
-			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 196, 6, 4));
-			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 296, 2, 4));
-			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 396, 3, 4));
-			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 496, 1, 4));
-			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 596, 5, 4));
-			choices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 696, 7, 4));
+			botChoices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 96, 4, 4));
+			botChoices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 196, 6, 4));
+			botChoices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 296, 2, 4));
+			botChoices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 396, 3, 4));
+			botChoices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 496, 1, 4));
+			botChoices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 596, 5, 4));
+			botChoices.Add(new BotChoice(graphics.PreferredBackBufferWidth - 300, 696, 7, 4));
+
+			wallChoices.Add(new WallChoice(graphics.PreferredBackBufferWidth - 150, 96, 4, 4));
+			wallChoices.Add(new WallChoice(graphics.PreferredBackBufferWidth - 150, 196, 6, 4));
+			wallChoices.Add(new WallChoice(graphics.PreferredBackBufferWidth - 150, 296, 2, 4));
+			wallChoices.Add(new WallChoice(graphics.PreferredBackBufferWidth - 150, 396, 3, 4));
+			wallChoices.Add(new WallChoice(graphics.PreferredBackBufferWidth - 150, 496, 1, 4));
+			wallChoices.Add(new WallChoice(graphics.PreferredBackBufferWidth - 150, 596, 5, 4));
+			wallChoices.Add(new WallChoice(graphics.PreferredBackBufferWidth - 150, 696, 7, 4));
 		}
 
 		protected override void UnloadContent()
@@ -98,10 +108,12 @@ namespace Hue_Bots
 				this.Exit();
 
 			BotChoice.FoundSpawner = false;
-			foreach (Actor a in choices)
+			foreach (Actor a in botChoices)
 				a.Update();
-			if (Mouse.GetState().LeftButton == ButtonState.Released && !BotChoice.FoundSpawner)
+			if (Mouse.GetState().LeftButton == ButtonState.Released && !BotChoice.FoundSpawner && BotChoice.Selection != -1)
 				BotChoice.Selection = -1;
+			foreach (Actor a in wallChoices)
+				a.Update();
 
 			foreach (Actor a in actors)
 				a.Update();
@@ -121,10 +133,14 @@ namespace Hue_Bots
 			foreach (Actor a in actors)
 				a.Draw(spriteBatch);
 			spriteBatch.Draw(tex_blank, new Rectangle(1088, 0, 320, 896), Color.LightGray);
-			foreach (Actor a in choices)
+			foreach (Actor a in botChoices)
+				a.Draw(spriteBatch);
+			foreach (Actor a in wallChoices)
 				a.Draw(spriteBatch);
 			if (BotChoice.Selection != -1)
 				spriteBatch.Draw(tex_bot, new Vector2(Mouse.GetState().X - 32, Mouse.GetState().Y - 32), COLORS[BotChoice.Selection]);
+			if (WallChoice.Selection != -1)
+				spriteBatch.Draw(tex_wall, new Vector2((float)Math.Round((float)(Mouse.GetState().X - 32) / 64) * 64, (float)Math.Round((float)(Mouse.GetState().Y - 32) / 64) * 64), COLORS[WallChoice.Selection]);
 			spriteBatch.End();
 
 			base.Draw(gameTime);

@@ -3,3 +3,5 @@ Content\bot.xnb
 Content\wall.xnb
 Content\selected.xnb
 Content\door.xnb
+Content\font.xnb
+Content\spawner.xnb

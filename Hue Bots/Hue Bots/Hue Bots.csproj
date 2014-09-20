@@ -116,6 +116,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="MainGame.cs" />
     <Compile Include="Wall.cs" />
+    <Compile Include="WallChoice.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
