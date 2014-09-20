@@ -1,29 +1,29 @@
-.0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0
-.0 .0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 .0 .0
-.0 .0 w0 c4 .0 .0 .0 w0 f0 w0 .0 .0 .0 c1 w0 .0 .0
-.0 .0 w0 .0 .0 .0 .0 w0 .0 w0 .0 .0 .0 .0 w0 .0 .0
-.0 .0 w0 w0 w0 .0 .0 w1 .0 w4 .0 .0 w0 w0 w0 .0 .0
-.0 .0 w0 w0 w0 .0 .0 w0 d1 w0 .0 .0 w0 w0 w0 .0 .0
-.0 .0 w0 .0 w0 .0 .0 w0 d4 w0 .0 .0 w0 .0 w0 .0 .0
-.0 .0 w0 .0 .0 .0 .0 w0 .0 w0 .0 .0 .0 .0 w0 .0 .0
-.0 .0 w0 .0 .0 .0 .0 w0 c2 w0 .0 .0 .0 .0 w0 .0 .0
-.0 .0 w0 .0 .0 .0 .0 w0 .0 w0 .0 .0 .0 .0 w0 .0 .0
-.0 .0 w0 .0 w0 w0 .0 w0 .0 w0 .0 w0 w0 .0 w0 .0 .0
-.0 .0 w0 .0 c2 .0 .0 w7 s0 w7 .0 .0 c2 .0 w0 .0 .0
-.0 .0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 .0 .0
-.0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0
+w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 >2 .0 .0 .0 v2 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 s0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 .0 w0
+w0 .0 .0 .0 ^2 .0 .0 .0 .0 .0 .0 <2 .0 .0 .0 .0 w0
+w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0 w0
 
-redbots=1
-orangebots=0
-yellowbots=0
-greenbots=0
-bluebots=1
-purplebots=0
-whitebots=1
-redwalls=2
-orangewalls=0
-yellowwalls=1
-greenwalls=0
-bluewalls=1
-purplewalls=0
-graywalls=0
+redbots=99
+orangebots=99
+yellowbots=99
+greenbots=99
+bluebots=99
+purplebots=99
+whitebots=99
+redwalls=99
+orangewalls=99
+yellowwalls=99
+greenwalls=99
+bluewalls=99
+purplewalls=99
+graywalls=99

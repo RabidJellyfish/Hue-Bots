@@ -15,15 +15,15 @@
 
 redbots=0
 orangebots=0
-yellowbots=2
-greenbots=1
-bluebots=3
-purplebots=10
-whitebots=1
-redwalls=15
-orangewalls=20
-yellowwalls=20
-greenwalls=20
-bluewalls=20
-purplewalls=20
-graywalls=10
+yellowbots=0
+greenbots=0
+bluebots=0
+purplebots=0
+whitebots=0
+redwalls=0
+orangewalls=0
+yellowwalls=0
+greenwalls=0
+bluewalls=0
+purplewalls=0
+graywalls=0

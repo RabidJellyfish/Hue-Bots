@@ -47,7 +47,7 @@ namespace Hue_Bots
 				}
 				if (!onSpawner && Selection == this.Color)
 				{
-					if (this.count > 0)
+					if (this.count > 0 && curMouse.X < MainGame.SCREEN_WIDTH - 320)
 					{
 						MainGame.actors.Add(new Wall(curMouse.X - 32, curMouse.Y - 32, Selection));
 						MainGame.actors.Last().Snap();

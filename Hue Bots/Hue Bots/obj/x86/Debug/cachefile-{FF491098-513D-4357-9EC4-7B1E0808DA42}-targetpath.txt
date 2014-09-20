@@ -13,5 +13,10 @@ Content\bots\purple bot.xnb
 Content\bots\red bot.xnb
 Content\bots\white bot.xnb
 Content\bots\yellow bot.xnb
+Content\changer.xnb
+Content\finish.xnb
+Content\arrow.xnb
 Content\levels\blank level.txt
+Content\levels\level 9.txt
 Content\levels\test level.txt
+Content\levels\level 8.txt

@@ -88,6 +88,28 @@ namespace Hue_Bots
 						else
 							Stop();
 					}
+					else if (s is ColorChanger)
+					{
+						this.Color = s.Color;
+					}
+					else if ((s is Arrow) && ColorMatches(s.Color))
+					{
+						if ((this.Position - s.Position).Length() < 8)
+						{
+							Snap();
+							this.Velocity = ((Arrow)s).direction * 8;
+						}
+					}
+					else if ((s is Finish) && this.Color == 7)
+					{
+						if ((this.Position - s.Position).Length() < 16)
+						{
+							Snap();
+							this.Velocity = Vector2.Zero;
+							if (((Finish)s).finishAnimation < 0)
+								((Finish)s).finishAnimation = 120;
+						}
+					}
 				}
 			}
 

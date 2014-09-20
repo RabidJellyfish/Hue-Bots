@@ -8,6 +8,7 @@ door = d
 color changer = c
 mixer = m
 finish = f
+arrow = ^<>v
 
 redbot = 
 orangebot =
@@ -17,3 +18,9 @@ orangewall =
 ...
 
 17x14
+
+portals
+buttons
+rainbow changer thing
+don't show things you can't build
+

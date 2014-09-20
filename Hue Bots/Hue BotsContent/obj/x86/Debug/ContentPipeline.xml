@@ -136,6 +136,33 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\yellow bot.xnb</Output>
       <Time>2014-09-19T22:46:48.9106786-04:00</Time>
     </Item>
+    <Item>
+      <Source>changer.png</Source>
+      <Name>changer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\changer.xnb</Output>
+      <Time>2014-09-20T01:07:41.5379147-04:00</Time>
+    </Item>
+    <Item>
+      <Source>finish.png</Source>
+      <Name>finish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\finish.xnb</Output>
+      <Time>2014-09-20T01:09:05.1704455-04:00</Time>
+    </Item>
+    <Item>
+      <Source>arrow.png</Source>
+      <Name>arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\arrow.xnb</Output>
+      <Time>2014-09-20T02:45:28.7947607-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
