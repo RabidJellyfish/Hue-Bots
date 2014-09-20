@@ -2,7 +2,6 @@ Content\blank.xnb
 Content\bot.xnb
 Content\wall.xnb
 Content\selected.xnb
-Content\door.xnb
 Content\font.xnb
 Content\spawner.xnb
 Content\bots\black bot.xnb
@@ -16,6 +15,15 @@ Content\bots\yellow bot.xnb
 Content\changer.xnb
 Content\finish.xnb
 Content\arrow.xnb
+Content\bg.xnb
+Content\doors\blue door.xnb
+Content\doors\green door.xnb
+Content\doors\orange door.xnb
+Content\doors\purple door.xnb
+Content\doors\red door.xnb
+Content\doors\yellow door.xnb
+Content\doors\black door.xnb
+Content\doors\white door.xnb
 Content\levels\blank level.txt
 Content\levels\level 7.txt
 Content\levels\test level.txt
@@ -25,3 +33,5 @@ Content\levels\level 2.txt
 Content\levels\level 3.txt
 Content\levels\level 5.txt
 Content\levels\level 4.txt
+Content\levels\level 0.txt
+Content\levels\level 8.txt

@@ -27,11 +27,12 @@ namespace Hue_Bots
 
 		public static Color[] COLORS = new Color[] { Color.DarkGray, Color.Blue, Color.Yellow, Color.Lime, Color.Red, Color.Purple, Color.Orange, Color.White };
 		public static Texture2D[] tex_bots = new Texture2D[8];
+		public static Texture2D[] tex_doors = new Texture2D[8];
 
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public static Texture2D tex_blank, tex_wall, tex_selected, tex_door, tex_spawner, tex_finish, tex_changer, tex_arrow;
+		public static Texture2D tex_blank, tex_wall, tex_selected, tex_spawner, tex_finish, tex_changer, tex_arrow, tex_bg;
 		public static SpriteFont fnt_font;
 
 		public static List<Actor> actors;
@@ -76,7 +77,6 @@ namespace Hue_Bots
 
 			tex_wall = Content.Load<Texture2D>("wall");
 			tex_selected = Content.Load<Texture2D>("selected");
-            tex_door = Content.Load<Texture2D>("door");
 			tex_spawner = Content.Load<Texture2D>("spawner");
 			tex_finish = Content.Load<Texture2D>("finish");
 			tex_changer = Content.Load<Texture2D>("changer");
@@ -91,9 +91,20 @@ namespace Hue_Bots
 			tex_bots[6] = Content.Load<Texture2D>("bots/orange bot");
 			tex_bots[7] = Content.Load<Texture2D>("bots/white bot");
 
+			tex_doors[0] = Content.Load<Texture2D>("doors/black door");
+			tex_doors[1] = Content.Load<Texture2D>("doors/blue door");
+			tex_doors[2] = Content.Load<Texture2D>("doors/yellow door");
+			tex_doors[3] = Content.Load<Texture2D>("doors/green door");
+			tex_doors[4] = Content.Load<Texture2D>("doors/red door");
+			tex_doors[5] = Content.Load<Texture2D>("doors/purple door");
+			tex_doors[6] = Content.Load<Texture2D>("doors/orange door");
+			tex_doors[7] = Content.Load<Texture2D>("doors/white door");
+
+			tex_bg = Content.Load<Texture2D>("bg");
+
 			fnt_font = Content.Load<SpriteFont>("font");
 
-			currentLevel = "level 1";
+			currentLevel = "level 0";
 			LoadLevel(currentLevel);
 
 			//// Testing ////
@@ -394,6 +405,7 @@ namespace Hue_Bots
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
 			spriteBatch.Begin();
+			spriteBatch.Draw(tex_bg, Vector2.Zero, Color.White);
 			foreach (Actor a in actors)
 				a.Draw(spriteBatch);
 			spriteBatch.Draw(tex_blank, new Rectangle(1088, 0, 320, 896), Color.LightGray);
@@ -401,6 +413,7 @@ namespace Hue_Bots
 				a.Draw(spriteBatch);
 			foreach (Actor a in wallChoices)
 				a.Draw(spriteBatch);
+
 			if (BotChoice.Selection != -1)
 				spriteBatch.Draw(tex_bots[BotChoice.Selection], new Vector2(Mouse.GetState().X - 32, Mouse.GetState().Y - 32), Color.White);
 			if (WallChoice.Selection != -1)
@@ -419,7 +432,7 @@ namespace Hue_Bots
 						spriteBatch.Draw(tex_spawner, pos, Color.White);
 						break;
 					case 'd':
-						spriteBatch.Draw(tex_door, pos, COLORS[currentColor]);
+						spriteBatch.Draw(tex_doors[currentColor], pos, Color.White);
 						break;
 					case 'c':
 						spriteBatch.Draw(tex_changer, pos, COLORS[currentColor]);

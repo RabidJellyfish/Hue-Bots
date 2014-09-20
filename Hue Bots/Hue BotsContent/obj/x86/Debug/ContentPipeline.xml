@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\wall.xnb</Output>
-      <Time>2014-09-19T18:51:47.3159001-04:00</Time>
+      <Time>2014-09-20T10:44:46.8955025-04:00</Time>
     </Item>
     <Item>
       <Source>selected.png</Source>
@@ -35,16 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\selected.xnb</Output>
-      <Time>2014-09-19T19:20:59.8095816-04:00</Time>
-    </Item>
-    <Item>
-      <Source>door.png</Source>
-      <Name>door</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\door.xnb</Output>
-      <Time>2014-09-19T20:40:19.7398664-04:00</Time>
+      <Time>2014-09-20T12:45:51.2055996-04:00</Time>
     </Item>
     <Item>
       <Source>font.spritefont</Source>
@@ -62,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\spawner.xnb</Output>
-      <Time>2014-09-19T20:54:00.5653846-04:00</Time>
+      <Time>2014-09-20T13:11:50-04:00</Time>
     </Item>
     <Item>
       <Source>bots\black bot.png</Source>
@@ -143,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\changer.xnb</Output>
-      <Time>2014-09-20T01:07:41.5379147-04:00</Time>
+      <Time>2014-09-20T12:58:36.6050567-04:00</Time>
     </Item>
     <Item>
       <Source>finish.png</Source>
@@ -152,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\finish.xnb</Output>
-      <Time>2014-09-20T01:09:05.1704455-04:00</Time>
+      <Time>2014-09-20T12:43:49.4701324-04:00</Time>
     </Item>
     <Item>
       <Source>arrow.png</Source>
@@ -161,7 +152,88 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\arrow.xnb</Output>
-      <Time>2014-09-20T02:45:28.7947607-04:00</Time>
+      <Time>2014-09-20T12:41:32.4632206-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bg.png</Source>
+      <Name>bg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bg.xnb</Output>
+      <Time>2014-09-20T10:20:01.7887294-04:00</Time>
+    </Item>
+    <Item>
+      <Source>doors\blue door.png</Source>
+      <Name>doors\blue door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\blue door.xnb</Output>
+      <Time>2014-09-20T10:53:17.1250627-04:00</Time>
+    </Item>
+    <Item>
+      <Source>doors\green door.png</Source>
+      <Name>doors\green door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\green door.xnb</Output>
+      <Time>2014-09-20T10:52:45.8399059-04:00</Time>
+    </Item>
+    <Item>
+      <Source>doors\orange door.png</Source>
+      <Name>doors\orange door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\orange door.xnb</Output>
+      <Time>2014-09-20T10:51:52.4783975-04:00</Time>
+    </Item>
+    <Item>
+      <Source>doors\purple door.png</Source>
+      <Name>doors\purple door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\purple door.xnb</Output>
+      <Time>2014-09-20T10:53:42.4451097-04:00</Time>
+    </Item>
+    <Item>
+      <Source>doors\red door.png</Source>
+      <Name>doors\red door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\red door.xnb</Output>
+      <Time>2014-09-20T10:51:26.8771334-04:00</Time>
+    </Item>
+    <Item>
+      <Source>doors\yellow door.png</Source>
+      <Name>doors\yellow door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\yellow door.xnb</Output>
+      <Time>2014-09-20T10:52:15.2884448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>doors\black door.png</Source>
+      <Name>doors\black door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\black door.xnb</Output>
+      <Time>2014-09-20T10:56:10.3096659-04:00</Time>
+    </Item>
+    <Item>
+      <Source>doors\white door.png</Source>
+      <Name>doors\white door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\white door.xnb</Output>
+      <Time>2014-09-20T10:56:26.64722-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

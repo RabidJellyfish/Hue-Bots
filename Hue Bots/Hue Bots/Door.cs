@@ -21,7 +21,7 @@ namespace Hue_Bots
 
         public override void Draw(SpriteBatch sb)
         {
-            sb.Draw(MainGame.tex_door, Position, MainGame.COLORS[Color]);
+            sb.Draw(MainGame.tex_doors[Color], Position, Microsoft.Xna.Framework.Color.White);
         }
     }
 }

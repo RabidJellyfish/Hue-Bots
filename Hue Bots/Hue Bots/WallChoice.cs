@@ -13,7 +13,7 @@ namespace Hue_Bots
 	{
 		public static int Selection = -1;
 
-		private int count;
+		public int Count { get; set; }
 
 		public WallChoice(int x, int y, int color, int count)
 			: base()
@@ -21,7 +21,7 @@ namespace Hue_Bots
 			this.X = x;
 			this.Y = y;
 			this.Color = color;
-			this.count = count;
+			this.Count = count;
 		}
 
 		public override void Update()
@@ -30,7 +30,7 @@ namespace Hue_Bots
 
 			if (curMouse.LeftButton == ButtonState.Pressed && prevMouse.LeftButton == ButtonState.Released)
 			{
-				if (Box.Contains(curMouse.X, curMouse.Y))
+				if (Box.Contains(curMouse.X, curMouse.Y) && this.Count > 0)
 					Selection = this.Color;
 			}
 			else if (curMouse.LeftButton == ButtonState.Released && prevMouse.LeftButton == ButtonState.Pressed)
@@ -47,11 +47,11 @@ namespace Hue_Bots
 				}
 				if (!onSpawner && Selection == this.Color)
 				{
-					if (this.count > 0 && curMouse.X < MainGame.SCREEN_WIDTH - 320)
+					if (this.Count > 0 && curMouse.X < MainGame.SCREEN_WIDTH - 320)
 					{
 						MainGame.actors.Add(new Wall(curMouse.X - 32, curMouse.Y - 32, Selection));
 						MainGame.actors.Last().Snap();
-						count--;
+						Count--;
 					}
 					Selection = -1;
 				}
@@ -62,8 +62,8 @@ namespace Hue_Bots
 
 		public override void Draw(SpriteBatch sb)
 		{
-			sb.Draw(MainGame.tex_wall, Position, MainGame.COLORS[Color]);
-			sb.DrawString(MainGame.fnt_font, count.ToString(), Position + Vector2.UnitX * 75, Microsoft.Xna.Framework.Color.Black);
+			sb.Draw(MainGame.tex_wall, Position, this.Count > 0 ? MainGame.COLORS[Color] : new Color(MainGame.COLORS[Color].R, MainGame.COLORS[Color].G, MainGame.COLORS[Color].B, 50));
+			sb.DrawString(MainGame.fnt_font, Count.ToString(), Position + Vector2.UnitX * 75, Microsoft.Xna.Framework.Color.Black);
 		}
 	}
 }

@@ -14,14 +14,14 @@ namespace Hue_Bots
 		public static int Selection = -1;
 		public static bool FoundSpawner = false;
 
-		private int count;
+		public int Count { get; set; }
 
 		public BotChoice(int x, int y, int color, int count) : base()
 		{
 			this.X = x;
 			this.Y = y;
 			this.Color = color;
-			this.count = count;
+			this.Count = count;
 		}
 
 		public override void Update()
@@ -30,12 +30,12 @@ namespace Hue_Bots
 
 			if (curMouse.LeftButton == ButtonState.Pressed && prevMouse.LeftButton == ButtonState.Released)
 			{
-				if (Box.Contains(curMouse.X, curMouse.Y))
+				if (Box.Contains(curMouse.X, curMouse.Y) && this.Count > 0)
 					Selection = this.Color;
 			}
 			else if (curMouse.LeftButton == ButtonState.Released && prevMouse.LeftButton == ButtonState.Pressed)
 			{
-				if (Selection == this.Color && this.count > 0)
+				if (Selection == this.Color && this.Count > 0)
 				{
 					var spawners = from Actor s in MainGame.actors
 								   where s is Spawner
@@ -45,7 +45,7 @@ namespace Hue_Bots
 						if (s.Box.Contains(curMouse.X, curMouse.Y))
 						{
 							MainGame.actors.Add(new Bot(s.X, s.Y, Selection, true));
-							count--;
+							Count--;
 							Selection = -1;
 							FoundSpawner = true;
 							break;
@@ -59,8 +59,8 @@ namespace Hue_Bots
 
 		public override void Draw(SpriteBatch sb)
 		{
-			sb.Draw(MainGame.tex_bots[Color], Position, Microsoft.Xna.Framework.Color.White);
-			sb.DrawString(MainGame.fnt_font, count.ToString(), Position + Vector2.UnitX * 75, Microsoft.Xna.Framework.Color.Black);
+			sb.Draw(MainGame.tex_bots[Color], Position, this.Count > 0 ? Microsoft.Xna.Framework.Color.White : new Microsoft.Xna.Framework.Color(255, 255, 255, 50));
+			sb.DrawString(MainGame.fnt_font, Count.ToString(), Position + Vector2.UnitX * 75, Microsoft.Xna.Framework.Color.Black);
 		}
 	}
 }
