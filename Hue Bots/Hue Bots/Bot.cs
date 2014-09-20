@@ -12,8 +12,6 @@ namespace Hue_Bots
 	class Bot : Actor
 	{
 		private bool selected, canMove;
-		private MouseState prevMouse, curMouse;
-		private KeyboardState prevKey, curKey;
 
 		public Bot(int x, int y, int color) : base()
 		{

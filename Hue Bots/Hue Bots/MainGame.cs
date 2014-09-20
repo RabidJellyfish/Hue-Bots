@@ -32,8 +32,8 @@ namespace Hue_Bots
 			removeActors = new List<Actor>();
 
 			graphics = new GraphicsDeviceManager(this);
-			graphics.PreferredBackBufferHeight = 720;
-			graphics.PreferredBackBufferWidth = 1280;
+			graphics.PreferredBackBufferHeight = 896;
+			graphics.PreferredBackBufferWidth = 1408;
 			graphics.IsFullScreen = false;
 			Content.RootDirectory = "Content";
 		}
@@ -55,11 +55,17 @@ namespace Hue_Bots
 			tex_wall = Content.Load<Texture2D>("wall");
 			tex_selected = Content.Load<Texture2D>("selected");
 
-			actors.Add(new Bot(64, 0, 1));
-			actors.Add(new Wall(320, 0, 4));
-			actors.Add(new Wall(640, 0, 1));
-			actors.Add(new Wall(0, 0, 1));
-			actors.Add(new Wall(64, 320, 0));
+			actors.Add(new Bot(64, 64, 1));
+			for (int i = 0; i < 1088; i += 64)
+			{
+				actors.Add(new Wall(i, 0, 0));
+				actors.Add(new Wall(i, graphics.PreferredBackBufferHeight - 64, 0));
+			}
+			for (int i = 0; i < 896; i += 64)
+			{
+				actors.Add(new Wall(0, i, 0));
+				actors.Add(new Wall(graphics.PreferredBackBufferWidth - 384, i, 0));
+			}
 		}
 
 		protected override void UnloadContent()
@@ -88,6 +94,7 @@ namespace Hue_Bots
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
 			spriteBatch.Begin();
+			spriteBatch.Draw(tex_blank, new Rectangle(1088, 0, 320, 896), Color.LightGray);
 			foreach (Actor a in actors)
 				a.Draw(spriteBatch);
 			spriteBatch.End();

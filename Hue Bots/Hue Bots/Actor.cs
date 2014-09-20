@@ -5,11 +5,15 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace Hue_Bots
 {
 	public class Actor
 	{
+		protected MouseState prevMouse, curMouse;
+		protected KeyboardState prevKey, curKey;
+
 		public const int WIDTH = 64;
 
 		public int Color { get; set; }
