@@ -144,7 +144,7 @@ namespace Hue_Bots
 						else if (line[x][0] == 'd')
 							actors.Add(new Door(x * Actor.WIDTH, y * Actor.WIDTH, (int)char.GetNumericValue(line[x][1])));
 						else if (line[x][0] == 'c')
-							actors.Add(new ColorChanger(x * Actor.WIDTH, y * Actor.WIDTH, (int)char.GetNumericValue(line[x][1])));// Color changer
+							actors.Add(new ColorChanger(x * Actor.WIDTH, y * Actor.WIDTH, (int)char.GetNumericValue(line[x][1])));
 						else if (line[x][0] == 'm')
 							;// Color mixer
 						else if (line[x][0] == 'f')
