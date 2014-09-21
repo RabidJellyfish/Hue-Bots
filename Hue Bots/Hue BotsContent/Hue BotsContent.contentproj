@@ -134,9 +134,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 8.txt">
+    <None Include="levels\level 11.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>level 8</Name>
+      <Name>level 11</Name>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -165,9 +165,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 7.txt">
+    <None Include="levels\level 9.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>level 7</Name>
+      <Name>level 9</Name>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -189,8 +189,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 5.txt">
-      <Name>level 5</Name>
+    <None Include="levels\level 6.txt">
+      <Name>level 6</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -258,14 +258,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 9.txt">
-      <Name>level 9</Name>
+    <None Include="levels\level 12.txt">
+      <Name>level 12</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 6.txt">
-      <Name>level 6</Name>
+    <None Include="levels\level 7.txt">
+      <Name>level 7</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -275,6 +275,31 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="help arrow.png">
+      <Name>help arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="levels\level 5.txt">
+      <Name>level 5</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="levels\level 8.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>level 8</Name>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="levels\level 10.txt">
+      <Name>level 10</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 

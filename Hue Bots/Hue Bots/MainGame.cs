@@ -32,7 +32,7 @@ namespace Hue_Bots
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public static Texture2D tex_blank, tex_wall, tex_selected, tex_spawner, tex_finish, tex_changer, tex_arrow, tex_bg;
+		public static Texture2D tex_helpArrow, tex_blank, tex_wall, tex_selected, tex_spawner, tex_finish, tex_changer, tex_arrow, tex_bg;
 		public static SpriteFont fnt_font;
 
 		public static List<Actor> actors;
@@ -76,6 +76,7 @@ namespace Hue_Bots
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			tex_blank = Content.Load<Texture2D>("blank");
+			tex_helpArrow = Content.Load<Texture2D>("help arrow");
 
 			tex_wall = Content.Load<Texture2D>("wall");
 			tex_selected = Content.Load<Texture2D>("selected");
@@ -410,10 +411,18 @@ namespace Hue_Bots
 		{
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
-			spriteBatch.Begin();
+			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend);
 			spriteBatch.Draw(tex_bg, Vector2.Zero, Color.White);
+
 			foreach (Actor a in actors)
-				a.Draw(spriteBatch);
+				if (!(a is Bot))
+					a.Draw(spriteBatch);
+			var bots = from Actor a in actors
+					   where a is Bot
+					   select a as Bot;
+			foreach (Bot b in bots)
+				b.Draw(spriteBatch);
+
 			spriteBatch.Draw(tex_blank, new Rectangle(1088, 0, 320, 896), Color.LightGray);
 			foreach (Actor a in botChoices)
 				a.Draw(spriteBatch);
@@ -460,6 +469,32 @@ namespace Hue_Bots
 						break;
 				}
 			}
+
+			#region draw help
+
+			if (currentLevel == "level 0")
+			{
+				spriteBatch.DrawString(fnt_font, "Click/drag robots to robot builder to make a robot\n" +
+												 "Click built robot to select it, use WASD to move", new Vector2(100, 600), Color.White);
+				if (botChoices[6].Count > 0)
+				{
+					spriteBatch.Draw(tex_helpArrow, new Vector2(280, 220), null, Color.White, MathHelper.PiOver2, new Vector2(96, 32), 1f, SpriteEffects.None, 0f);
+					spriteBatch.Draw(tex_helpArrow, new Vector2(1000, 730), null, Color.White, 0f, new Vector2(96, 32), 1f, SpriteEffects.None, 0f);
+				}
+				else
+				{
+					spriteBatch.Draw(tex_helpArrow, new Vector2(740, 220), null, Color.White, MathHelper.PiOver2, new Vector2(96, 32), 1f, SpriteEffects.None, 0f);
+				}
+			}
+			else if (currentLevel == "level 2")
+			{
+				spriteBatch.DrawString(fnt_font, "Click/drag walls\n"+
+												 "to create them.\n\n" +
+												 "Press <R> to restart\n" +
+												 "level", new Vector2(50, 60), Color.White);
+			}
+
+			#endregion
 
 			spriteBatch.End();
 

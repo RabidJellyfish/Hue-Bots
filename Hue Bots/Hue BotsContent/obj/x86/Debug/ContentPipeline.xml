@@ -44,7 +44,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\font.xnb</Output>
-      <Time>2014-09-19T20:54:36.9977828-04:00</Time>
+      <Time>2014-09-21T14:07:30.9988819-04:00</Time>
     </Item>
     <Item>
       <Source>spawner.png</Source>
@@ -244,6 +244,15 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\hue bots music.xnb</Output>
       <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\hue bots music.wma</Extra>
       <Time>2014-09-20T22:05:09.4107826-04:00</Time>
+    </Item>
+    <Item>
+      <Source>help arrow.png</Source>
+      <Name>help arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\help arrow.xnb</Output>
+      <Time>2014-09-21T14:09:38.1571544-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

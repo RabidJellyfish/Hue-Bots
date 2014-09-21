@@ -19,7 +19,7 @@ namespace Hue_Bots
 
 		public override void Draw(SpriteBatch sb)
 		{
-			sb.Draw(MainGame.tex_wall, Position, MainGame.COLORS[Color]);
+			sb.Draw(MainGame.tex_wall, Position, null, MainGame.COLORS[Color], 0, Vector2.Zero, 1f, SpriteEffects.None, 0.1f);
 		}
 	}
 }

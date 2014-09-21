@@ -32,7 +32,10 @@ namespace Hue_Bots
 				if (Box.Contains(curMouse.X, curMouse.Y))
 					this.selected = true;
 				else
-					this.selected = false;
+				{
+					if (curMouse.X < MainGame.SCREEN_WIDTH - 180)
+						this.selected = false;
+				}
 			}
 
 			if (selected && canMove)
@@ -126,9 +129,9 @@ namespace Hue_Bots
 
 		public override void Draw(SpriteBatch sb)
 		{
-			sb.Draw(MainGame.tex_bots[Color], Position, Microsoft.Xna.Framework.Color.White);
+			sb.Draw(MainGame.tex_bots[Color], Position, null, Microsoft.Xna.Framework.Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.9f);
 			if (selected)
-				sb.Draw(MainGame.tex_selected, Position, Microsoft.Xna.Framework.Color.White);
+				sb.Draw(MainGame.tex_selected, Position, null, Microsoft.Xna.Framework.Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.9f);
 		}
 	}
 }
