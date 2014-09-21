@@ -46,6 +46,8 @@ namespace Hue_Bots
 
 		KeyboardState curKeys, prevKeys;
 
+		public static Song music;
+
 		public MainGame()
 		{
 			actors = new List<Actor>();
@@ -101,14 +103,18 @@ namespace Hue_Bots
 			tex_doors[7] = Content.Load<Texture2D>("doors/white door");
 
 			tex_bg = Content.Load<Texture2D>("bg");
+			music = Content.Load<Song>("hue bots music");
 
 			fnt_font = Content.Load<SpriteFont>("font");
+
+			MediaPlayer.IsRepeating = true;
+			MediaPlayer.Play(music);
 
 			currentLevel = "level 0";
 			LoadLevel(currentLevel);
 
 			//// Testing ////
-			// for (int i = 0; i < 1088; i += 64)
+			// for (int i = 0; i < 1088; i += 64
 			// {
 			// 	actors.Add(new Wall(i, 0, 0));
 			// 	actors.Add(new Wall(i, graphics.PreferredBackBufferHeight - 64, 0));

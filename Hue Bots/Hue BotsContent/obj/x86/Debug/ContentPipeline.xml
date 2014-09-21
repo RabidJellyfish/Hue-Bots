@@ -235,6 +235,16 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\doors\white door.xnb</Output>
       <Time>2014-09-20T10:56:26.64722-04:00</Time>
     </Item>
+    <Item>
+      <Source>hue bots music.mp3</Source>
+      <Name>hue bots music</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\hue bots music.xnb</Output>
+      <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\hue bots music.wma</Extra>
+      <Time>2014-09-20T22:05:09.4107826-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

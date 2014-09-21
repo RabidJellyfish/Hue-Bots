@@ -62,3 +62,5 @@ C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\levels\level 8.txt
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\levels\level 9.txt
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\levels\level 6.txt
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\hue bots music.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\hue bots music.wma
