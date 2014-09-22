@@ -34,6 +34,8 @@ namespace Hue_Bots
 
 		public static Texture2D tex_helpArrow, tex_blank, tex_wall, tex_selected, tex_spawner, tex_finish, tex_changer, tex_arrow, tex_bg;
 		public static SpriteFont fnt_font;
+		public static Texture2D[] tex_winBots = new Texture2D[34];
+		public static AnimatedTexture anim_winBot;
 
 		public static List<Actor> actors;
 		public static List<Actor> removeActors;
@@ -82,7 +84,7 @@ namespace Hue_Bots
 			tex_selected = Content.Load<Texture2D>("selected");
 			tex_spawner = Content.Load<Texture2D>("spawner");
 			tex_finish = Content.Load<Texture2D>("finish");
-			tex_changer = Content.Load<Texture2D>("changer");
+			tex_changer = Content.Load<Texture2D>("changer 2");
 			tex_arrow = Content.Load<Texture2D>("arrow");
 
 			tex_bots[0] = Content.Load<Texture2D>("bots/black bot");
@@ -103,6 +105,10 @@ namespace Hue_Bots
 			tex_doors[6] = Content.Load<Texture2D>("doors/orange door");
 			tex_doors[7] = Content.Load<Texture2D>("doors/white door");
 
+			for (int i = 0; i < tex_winBots.Length; i++)
+				tex_winBots[i] = Content.Load<Texture2D>("win bot/white bot animation" + (i < 10 ? "0" : "") + i.ToString());
+			anim_winBot = new AnimatedTexture(tex_winBots, 2, false, true);
+
 			tex_bg = Content.Load<Texture2D>("bg");
 			music = Content.Load<Song>("hue bots music");
 
@@ -111,7 +117,7 @@ namespace Hue_Bots
 			MediaPlayer.IsRepeating = true;
 			MediaPlayer.Play(music);
 
-			currentLevel = "level 0";
+			currentLevel = "level 7";
 			LoadLevel(currentLevel);
 
 			//// Testing ////
@@ -132,6 +138,8 @@ namespace Hue_Bots
 
 		public static void LoadLevel(string name)
 		{
+			anim_winBot.Frame = 0;
+			anim_winBot.IsPlaying = false;
 			actors.Clear();
 			removeActors.Clear();
 			botChoices.Clear();
@@ -381,6 +389,7 @@ namespace Hue_Bots
 					rPressed = false;
 			}
 
+			anim_winBot.Update();
 			BotChoice.FoundSpawner = false;
 			foreach (Actor a in botChoices)
 				a.Update();

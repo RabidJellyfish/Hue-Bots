@@ -12,6 +12,7 @@ namespace Hue_Bots
 	class Bot : Actor
 	{
 		private bool selected, canMove;
+		public int finishAnimation = -1;
 
 		public Bot(int x, int y, int color, bool selected) : base()
 		{
@@ -105,14 +106,25 @@ namespace Hue_Bots
 					}
 					else if ((s is Finish) && this.Color == 7)
 					{
-						if ((this.Position - s.Position).Length() < 16)
+						if ((this.Position - s.Position).Length() < 12)
 						{
 							Snap();
 							this.Velocity = Vector2.Zero;
-							if (((Finish)s).finishAnimation < 0)
-								((Finish)s).finishAnimation = 120;
+							MainGame.anim_winBot.IsPlaying = true;
+							if (finishAnimation < 0)
+								finishAnimation = 120;
 						}
 					}
+				}
+			}
+
+			if (finishAnimation >= 0)
+			{
+				finishAnimation--;
+				if (finishAnimation == 0)
+				{
+					MainGame.currentLevel = "level " + (int.Parse(MainGame.currentLevel.Split(' ')[1]) + 1);
+					MainGame.changeLevel = true;
 				}
 			}
 
@@ -129,9 +141,14 @@ namespace Hue_Bots
 
 		public override void Draw(SpriteBatch sb)
 		{
-			sb.Draw(MainGame.tex_bots[Color], Position, null, Microsoft.Xna.Framework.Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.9f);
-			if (selected)
-				sb.Draw(MainGame.tex_selected, Position, null, Microsoft.Xna.Framework.Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.9f);
+			if (finishAnimation < 0)
+			{
+				sb.Draw(MainGame.tex_bots[Color], Position, null, Microsoft.Xna.Framework.Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.9f);
+				if (selected)
+					sb.Draw(MainGame.tex_selected, Position, null, Microsoft.Xna.Framework.Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.9f);
+			}
+			else
+				MainGame.anim_winBot.Draw(sb, Position - Vector2.UnitY * 20, Microsoft.Xna.Framework.Color.White);
 		}
 	}
 }

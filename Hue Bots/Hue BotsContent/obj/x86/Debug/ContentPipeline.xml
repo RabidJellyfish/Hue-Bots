@@ -254,6 +254,339 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\help arrow.xnb</Output>
       <Time>2014-09-21T14:09:38.1571544-04:00</Time>
     </Item>
+    <Item>
+      <Source>changer 2.png</Source>
+      <Name>changer 2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\changer 2.xnb</Output>
+      <Time>2014-09-22T11:04:02.1267021-04:00</Time>
+    </Item>
+    <Item>
+      <Source>questionmark.png</Source>
+      <Name>questionmark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\questionmark.xnb</Output>
+      <Time>2014-09-22T11:04:15.010439-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bots\rainbow bot.png</Source>
+      <Name>bots\rainbow bot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\bots\rainbow bot.xnb</Output>
+      <Time>2014-09-22T11:03:53.453206-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation00.png</Source>
+      <Name>win bot\white bot animation00</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation00.xnb</Output>
+      <Time>2014-09-22T11:05:05.5182701-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation01.png</Source>
+      <Name>win bot\white bot animation01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation01.xnb</Output>
+      <Time>2014-09-22T11:05:05.5382702-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation02.png</Source>
+      <Name>win bot\white bot animation02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation02.xnb</Output>
+      <Time>2014-09-22T11:05:05.5682702-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation03.png</Source>
+      <Name>win bot\white bot animation03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation03.xnb</Output>
+      <Time>2014-09-22T11:05:05.6082703-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation04.png</Source>
+      <Name>win bot\white bot animation04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation04.xnb</Output>
+      <Time>2014-09-22T11:05:05.6282703-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation05.png</Source>
+      <Name>win bot\white bot animation05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation05.xnb</Output>
+      <Time>2014-09-22T11:05:05.6482703-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation06.png</Source>
+      <Name>win bot\white bot animation06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation06.xnb</Output>
+      <Time>2014-09-22T11:05:05.6582703-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation07.png</Source>
+      <Name>win bot\white bot animation07</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation07.xnb</Output>
+      <Time>2014-09-22T11:05:05.6782704-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation08.png</Source>
+      <Name>win bot\white bot animation08</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation08.xnb</Output>
+      <Time>2014-09-22T11:05:05.6982704-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation09.png</Source>
+      <Name>win bot\white bot animation09</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation09.xnb</Output>
+      <Time>2014-09-22T11:05:05.7082704-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation10.png</Source>
+      <Name>win bot\white bot animation10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation10.xnb</Output>
+      <Time>2014-09-22T11:05:05.7282704-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation11.png</Source>
+      <Name>win bot\white bot animation11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation11.xnb</Output>
+      <Time>2014-09-22T11:05:05.7482705-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation12.png</Source>
+      <Name>win bot\white bot animation12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation12.xnb</Output>
+      <Time>2014-09-22T11:05:05.7682705-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation13.png</Source>
+      <Name>win bot\white bot animation13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation13.xnb</Output>
+      <Time>2014-09-22T11:05:05.7882705-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation14.png</Source>
+      <Name>win bot\white bot animation14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation14.xnb</Output>
+      <Time>2014-09-22T11:05:05.7982705-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation15.png</Source>
+      <Name>win bot\white bot animation15</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation15.xnb</Output>
+      <Time>2014-09-22T11:05:05.8182706-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation16.png</Source>
+      <Name>win bot\white bot animation16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation16.xnb</Output>
+      <Time>2014-09-22T11:05:05.8382706-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation17.png</Source>
+      <Name>win bot\white bot animation17</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation17.xnb</Output>
+      <Time>2014-09-22T11:05:05.8582706-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation18.png</Source>
+      <Name>win bot\white bot animation18</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation18.xnb</Output>
+      <Time>2014-09-22T11:05:05.8782706-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation19.png</Source>
+      <Name>win bot\white bot animation19</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation19.xnb</Output>
+      <Time>2014-09-22T11:05:05.8882707-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation20.png</Source>
+      <Name>win bot\white bot animation20</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation20.xnb</Output>
+      <Time>2014-09-22T11:05:05.9082707-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation21.png</Source>
+      <Name>win bot\white bot animation21</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation21.xnb</Output>
+      <Time>2014-09-22T11:05:05.9282707-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation22.png</Source>
+      <Name>win bot\white bot animation22</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation22.xnb</Output>
+      <Time>2014-09-22T11:05:05.9482707-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation23.png</Source>
+      <Name>win bot\white bot animation23</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation23.xnb</Output>
+      <Time>2014-09-22T11:05:05.9682708-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation24.png</Source>
+      <Name>win bot\white bot animation24</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation24.xnb</Output>
+      <Time>2014-09-22T11:05:05.9882708-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation25.png</Source>
+      <Name>win bot\white bot animation25</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation25.xnb</Output>
+      <Time>2014-09-22T11:05:05.9982708-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation26.png</Source>
+      <Name>win bot\white bot animation26</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation26.xnb</Output>
+      <Time>2014-09-22T11:05:06.0182708-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation27.png</Source>
+      <Name>win bot\white bot animation27</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation27.xnb</Output>
+      <Time>2014-09-22T11:05:06.0382709-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation28.png</Source>
+      <Name>win bot\white bot animation28</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation28.xnb</Output>
+      <Time>2014-09-22T11:05:06.0582709-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation29.png</Source>
+      <Name>win bot\white bot animation29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation29.xnb</Output>
+      <Time>2014-09-22T11:05:06.0782709-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation30.png</Source>
+      <Name>win bot\white bot animation30</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation30.xnb</Output>
+      <Time>2014-09-22T11:05:06.0982709-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation31.png</Source>
+      <Name>win bot\white bot animation31</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation31.xnb</Output>
+      <Time>2014-09-22T11:05:06.118271-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation32.png</Source>
+      <Name>win bot\white bot animation32</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation32.xnb</Output>
+      <Time>2014-09-22T11:05:06.138271-04:00</Time>
+    </Item>
+    <Item>
+      <Source>win bot\white bot animation33.png</Source>
+      <Name>win bot\white bot animation33</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Hue-Bots\Hue Bots\Hue Bots\bin\x86\Debug\Content\win bot\white bot animation33.xnb</Output>
+      <Time>2014-09-22T11:05:06.148271-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

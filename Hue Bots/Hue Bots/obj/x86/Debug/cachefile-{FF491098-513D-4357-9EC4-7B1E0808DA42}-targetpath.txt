@@ -27,6 +27,43 @@ Content\doors\white door.xnb
 Content\hue bots music.xnb
 Content\hue bots music.wma
 Content\help arrow.xnb
+Content\changer 2.xnb
+Content\questionmark.xnb
+Content\bots\rainbow bot.xnb
+Content\win bot\white bot animation00.xnb
+Content\win bot\white bot animation01.xnb
+Content\win bot\white bot animation02.xnb
+Content\win bot\white bot animation03.xnb
+Content\win bot\white bot animation04.xnb
+Content\win bot\white bot animation05.xnb
+Content\win bot\white bot animation06.xnb
+Content\win bot\white bot animation07.xnb
+Content\win bot\white bot animation08.xnb
+Content\win bot\white bot animation09.xnb
+Content\win bot\white bot animation10.xnb
+Content\win bot\white bot animation11.xnb
+Content\win bot\white bot animation12.xnb
+Content\win bot\white bot animation13.xnb
+Content\win bot\white bot animation14.xnb
+Content\win bot\white bot animation15.xnb
+Content\win bot\white bot animation16.xnb
+Content\win bot\white bot animation17.xnb
+Content\win bot\white bot animation18.xnb
+Content\win bot\white bot animation19.xnb
+Content\win bot\white bot animation20.xnb
+Content\win bot\white bot animation21.xnb
+Content\win bot\white bot animation22.xnb
+Content\win bot\white bot animation23.xnb
+Content\win bot\white bot animation24.xnb
+Content\win bot\white bot animation25.xnb
+Content\win bot\white bot animation26.xnb
+Content\win bot\white bot animation27.xnb
+Content\win bot\white bot animation28.xnb
+Content\win bot\white bot animation29.xnb
+Content\win bot\white bot animation30.xnb
+Content\win bot\white bot animation31.xnb
+Content\win bot\white bot animation32.xnb
+Content\win bot\white bot animation33.xnb
 Content\levels\blank level.txt
 Content\levels\level 11.txt
 Content\levels\test level.txt

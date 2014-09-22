@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actor.cs" />
+    <Compile Include="AnimatedTexture.cs" />
     <Compile Include="Arrow.cs" />
     <Compile Include="Bot.cs" />
     <Compile Include="BotChoice.cs" />
