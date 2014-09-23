@@ -19,6 +19,7 @@ namespace Hue_Bots
 	{
 		public const int SCREEN_WIDTH = 1408;
 		public const int SCREEN_HEIGHT = 896;
+		public const float SCREEN_SCALE = 1f;
 
 		public const bool EDIT_MODE = false;
 		private char currentChar = 'w';
@@ -58,8 +59,8 @@ namespace Hue_Bots
 			wallChoices = new List<WallChoice>();
 
 			graphics = new GraphicsDeviceManager(this);
-			graphics.PreferredBackBufferHeight = SCREEN_HEIGHT;
-			graphics.PreferredBackBufferWidth = SCREEN_WIDTH;
+			graphics.PreferredBackBufferHeight = (int)(SCREEN_HEIGHT * SCREEN_SCALE);
+			graphics.PreferredBackBufferWidth = (int)(SCREEN_WIDTH * SCREEN_SCALE);
 			graphics.IsFullScreen = false;
 			Content.RootDirectory = "Content";
 		}
@@ -117,7 +118,7 @@ namespace Hue_Bots
 			MediaPlayer.IsRepeating = true;
 			MediaPlayer.Play(music);
 
-			currentLevel = "level 7";
+			currentLevel = "level 0";
 			LoadLevel(currentLevel);
 
 			//// Testing ////
@@ -420,7 +421,8 @@ namespace Hue_Bots
 		{
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
-			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend);
+			Matrix transformMatrix = Matrix.CreateScale(SCREEN_SCALE);
+			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, transformMatrix);
 			spriteBatch.Draw(tex_bg, Vector2.Zero, Color.White);
 
 			foreach (Actor a in actors)
@@ -439,9 +441,9 @@ namespace Hue_Bots
 				a.Draw(spriteBatch);
 
 			if (BotChoice.Selection != -1)
-				spriteBatch.Draw(tex_bots[BotChoice.Selection], new Vector2(Mouse.GetState().X - 32, Mouse.GetState().Y - 32), Color.White);
+				spriteBatch.Draw(tex_bots[BotChoice.Selection], new Vector2((int)(Mouse.GetState().X / SCREEN_SCALE) - 32, (int)(Mouse.GetState().Y / SCREEN_SCALE) - 32), Color.White);
 			if (WallChoice.Selection != -1)
-				spriteBatch.Draw(tex_wall, new Vector2((float)Math.Round((float)(Mouse.GetState().X - 32) / 64) * 64, (float)Math.Round((float)(Mouse.GetState().Y - 32) / 64) * 64), COLORS[WallChoice.Selection]);
+				spriteBatch.Draw(tex_wall, new Vector2((float)Math.Round((float)((int)(Mouse.GetState().X / SCREEN_SCALE) - 32) / 64) * 64, (float)Math.Round((float)((int)(Mouse.GetState().Y / SCREEN_SCALE) - 32) / 64) * 64), COLORS[WallChoice.Selection]);
 
 			if (EDIT_MODE)
 			{

@@ -30,7 +30,7 @@ namespace Hue_Bots
 
 			if (curMouse.LeftButton == ButtonState.Pressed && prevMouse.LeftButton == ButtonState.Released)
 			{
-				if (Box.Contains(curMouse.X, curMouse.Y) && this.Count > 0)
+				if (Box.Contains((int)(curMouse.X / MainGame.SCREEN_SCALE), (int)(curMouse.Y / MainGame.SCREEN_SCALE)) && this.Count > 0)
 					Selection = this.Color;
 			}
 			else if (curMouse.LeftButton == ButtonState.Released && prevMouse.LeftButton == ButtonState.Pressed)
@@ -38,7 +38,7 @@ namespace Hue_Bots
 				bool onSpawner = false;
 				foreach (Actor a in MainGame.actors)
 				{
-					if (a.Box.Contains(curMouse.X, curMouse.Y))
+					if (a.Box.Contains((int)(curMouse.X / MainGame.SCREEN_SCALE), (int)(curMouse.Y / MainGame.SCREEN_SCALE)))
 					{
 						onSpawner = true;
 						Selection = -1;
@@ -47,9 +47,9 @@ namespace Hue_Bots
 				}
 				if (!onSpawner && Selection == this.Color)
 				{
-					if (this.Count > 0 && curMouse.X < MainGame.SCREEN_WIDTH - 320)
+					if (this.Count > 0 && (int)(curMouse.X / MainGame.SCREEN_SCALE) < MainGame.SCREEN_WIDTH - 320)
 					{
-						MainGame.actors.Add(new Wall(curMouse.X - 32, curMouse.Y - 32, Selection));
+						MainGame.actors.Add(new Wall((int)(curMouse.X / MainGame.SCREEN_SCALE) - 32, (int)(curMouse.Y / MainGame.SCREEN_SCALE) - 32, Selection));
 						MainGame.actors.Last().Snap();
 						Count--;
 					}

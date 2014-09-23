@@ -65,17 +65,17 @@ Content\win bot\white bot animation31.xnb
 Content\win bot\white bot animation32.xnb
 Content\win bot\white bot animation33.xnb
 Content\levels\blank level.txt
-Content\levels\level 11.txt
+Content\levels\level 10.txt
 Content\levels\test level.txt
-Content\levels\level 9.txt
+Content\levels\level 8.txt
 Content\levels\level 1.txt
 Content\levels\level 2.txt
 Content\levels\level 3.txt
-Content\levels\level 6.txt
+Content\levels\cool.txt
 Content\levels\level 4.txt
 Content\levels\level 0.txt
-Content\levels\level 12.txt
-Content\levels\level 7.txt
+Content\levels\level 11.txt
+Content\levels\level 6.txt
 Content\levels\level 5.txt
-Content\levels\level 8.txt
-Content\levels\level 10.txt
+Content\levels\level 7.txt
+Content\levels\level 9.txt

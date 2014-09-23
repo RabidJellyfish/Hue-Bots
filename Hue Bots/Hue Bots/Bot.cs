@@ -30,11 +30,11 @@ namespace Hue_Bots
 
 			if (curMouse.LeftButton == ButtonState.Pressed && prevMouse.LeftButton == ButtonState.Released)
 			{
-				if (Box.Contains(curMouse.X, curMouse.Y))
+				if (Box.Contains((int)(curMouse.X / MainGame.SCREEN_SCALE), (int)(curMouse.Y / MainGame.SCREEN_SCALE)))
 					this.selected = true;
 				else
 				{
-					if (curMouse.X < MainGame.SCREEN_WIDTH - 180)
+					if ((int)(curMouse.X / MainGame.SCREEN_SCALE) < MainGame.SCREEN_WIDTH - 180)
 						this.selected = false;
 				}
 			}

@@ -30,7 +30,7 @@ namespace Hue_Bots
 
 			if (curMouse.LeftButton == ButtonState.Pressed && prevMouse.LeftButton == ButtonState.Released)
 			{
-				if (Box.Contains(curMouse.X, curMouse.Y) && this.Count > 0)
+				if (Box.Contains((int)(curMouse.X / MainGame.SCREEN_SCALE), (int)(curMouse.Y / MainGame.SCREEN_SCALE)) && this.Count > 0)
 					Selection = this.Color;
 			}
 			else if (curMouse.LeftButton == ButtonState.Released && prevMouse.LeftButton == ButtonState.Pressed)
@@ -42,7 +42,7 @@ namespace Hue_Bots
 								   select s as Spawner;
 					foreach (Spawner s in spawners)
 					{
-						if (s.Box.Contains(curMouse.X, curMouse.Y))
+						if (s.Box.Contains((int)(curMouse.X / MainGame.SCREEN_SCALE), (int)(curMouse.Y / MainGame.SCREEN_SCALE)))
 						{
 							MainGame.actors.Add(new Bot(s.X, s.Y, Selection, true));
 							Count--;

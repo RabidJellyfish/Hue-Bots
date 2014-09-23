@@ -134,9 +134,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 11.txt">
+    <None Include="levels\level 10.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>level 11</Name>
+      <Name>level 10</Name>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -165,9 +165,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 9.txt">
+    <None Include="levels\level 8.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>level 9</Name>
+      <Name>level 8</Name>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -189,8 +189,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 6.txt">
-      <Name>level 6</Name>
+    <None Include="levels\cool.txt">
+      <Name>cool</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -258,14 +258,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 12.txt">
-      <Name>level 12</Name>
+    <None Include="levels\level 11.txt">
+      <Name>level 11</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 7.txt">
-      <Name>level 7</Name>
+    <None Include="levels\level 6.txt">
+      <Name>level 6</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -290,14 +290,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 8.txt">
+    <None Include="levels\level 7.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>level 8</Name>
+      <Name>level 7</Name>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="levels\level 10.txt">
-      <Name>level 10</Name>
+    <None Include="levels\level 9.txt">
+      <Name>level 9</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
